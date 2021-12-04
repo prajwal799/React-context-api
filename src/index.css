@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.navbar{
+  background: black;
+  height: 40px;
+}
+button{
+  background: blue;
+  color: white;
+  width: 80px;
+  height: 20px;
+  border: none;
+  margin: 10px 20px;
+}
