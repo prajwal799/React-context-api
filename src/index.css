@@ -1,6 +1,6 @@
+
 body {
   margin: 0;
-  
 }
 
 code {
@@ -9,13 +9,33 @@ code {
 }
 .navbar{
   background: black;
-  height: 40px;
+  height: 60px;
+  color: white;
+  display: flex;
+}
+.navbar h2{
+  margin-left: 40%;
+}
+.toggle_btn{
+  background: blue;
+  color: white;
+  margin-top: 24px;
+  margin-left: 20%;
 }
 button{
   background: blue;
   color: white;
-  width: 80px;
+  width: 120px;
   height: 20px;
   border: none;
   margin: 10px 20px;
+}
+.table{
+  width: 600px;
+margin: auto;
+text-align: left;
+height: 400px;
+}
+.table td , th {
+  border: 1px solid black;
 }

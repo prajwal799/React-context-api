@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import App from "../App";
 import { AppContext } from "../Context/ApplicationContextProvider";
+import ThemeContextProvider, { ThemeContext } from "../Context/Theme";
 import Token from "./Token";
 
 const Auth = () => {
@@ -13,8 +14,9 @@ const Auth = () => {
   
      const [isAuth , toggleAuth] = useContext(AppContext);
      
-   
- 
+     const [theme , toggleTheme] = useContext(ThemeContext)
+ console.log(theme)
+console.log(loginbtn,"cxkkx");
       const handleSubmit = () => {
            
           setIsLoading(true);
@@ -58,6 +60,7 @@ const Auth = () => {
           <div className="navbar">
           <button onClick={() => setLoginbtn(true)}>Login</button>
             <button onClick={() => setLoginbtn(false)}>LoginOut</button>
+            {/* <button onClick={toggleTheme}>Toggle Change the color {theme ? "Light" : "Dark"}</button> */}
           </div>
             {loginbtn ? 
              (<div>
@@ -68,7 +71,7 @@ const Auth = () => {
              <button onClick={  handleSubmit}>Submit</button>
              </div>) : (<h1></h1>)
                }
-            
+        
         </div>
     )
 }
