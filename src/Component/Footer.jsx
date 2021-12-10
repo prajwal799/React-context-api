@@ -1,11 +1,13 @@
 import { useContext } from "react";
 import { ThemeContext } from "../Context/Theme";
+import { Themechange } from "../Context/ThemeChangeColour";
 
 const Footer = () => {
   const [{theme , themeData}] = useContext(ThemeContext);
   const currentTheme = themeData[theme];
   
-
+ const [iscolor,setColor] = useContext(Themechange);
+ console.log(iscolor,"color");
     return (
         <div style={{
           color:currentTheme.color,

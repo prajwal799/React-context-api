@@ -5,12 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ApplicationContextProvider from './Context/ApplicationContextProvider';
 import ThemeContextProvider from './Context/Theme';
+import ThemechangeColour, { Themechange } from './Context/ThemeChangeColour';
+import 'antd/dist/antd.css'
 
 ReactDOM.render(
   <React.StrictMode>
     <ApplicationContextProvider>
     <ThemeContextProvider>
+     <ThemechangeColour>
+
     <App />
+     </ThemechangeColour>
       </ThemeContextProvider>
     </ApplicationContextProvider>
   </React.StrictMode>,
